@@ -1,0 +1,60 @@
+
+.rectanglewithinbackground{
+  height:100vh;
+  width:100vw;
+  background: url("../../assets/loginpagebg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+.username,.password,.heading{
+  color:#fff;
+  display: block;
+}
+.username,.password{
+  font-size: 20px;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:100%;
+}
+.form-container > div{
+  border:5px solid #fff;
+ max-width:400px;
+ width:100%;
+ min-width: 320px;
+ border-radius: 10px;
+ padding:15px;
+ /* box-shadow: 5px 10px 20px rgb(64, 62, 62); */
+}
+input[type="text"],input[type="password"]{
+  padding:5px 10px;
+  width:100%;
+  border:none;
+  outline:none;
+  font-size: 18px;
+}
+.login{
+  margin-right: 10px;
+  color:#fff;
+  background-color: lightgreen;
+}
+.btn-container{
+  margin-top: 20px;
+  
+}
+.cancel{
+  color:#fff;
+  background-color: tomato;
+}
+.cancel,.login{
+  display: inline-block;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  padding:10px;
+  cursor: pointer;
+}

@@ -1,0 +1,121 @@
+<div>
+  <mat-toolbar class="heading-bg">
+    <h1 class="heading">WGS Hiring portal</h1>
+  </mat-toolbar>
+  </div>
+<div cdkDropListGroup class="d-flex parent_container mt-3">
+  <div class="example-container">
+    <h2 class="card-heading">BackLog</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="backlog"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of backlog" cdkDrag>{{item}}</div>
+      <mat-card-actions class="btn-container">
+        <button mat-button class="tag_1">Tag 1</button>
+        <button mat-button class="tag_2">Tag 2</button>
+      </mat-card-actions>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="card-heading">Initial Screening</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="initialScreening"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of initialScreening" cdkDrag>{{item}}</div>
+      <mat-card-actions class="btn-container">
+        <button mat-button class="tag_1">Tag 1</button>
+        <button mat-button class="tag_2">Tag 2</button>
+      </mat-card-actions>
+    </div>
+  </div>
+  <div class="example-container">
+  <h2 class="card-heading">OnHold</h2>
+
+  <div
+    cdkDropList
+    [cdkDropListData]="onHold"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of onHold" cdkDrag>{{item}}</div>
+    <mat-card-actions class="btn-container">
+      <button mat-button class="tag_1">Tag 1</button>
+      <button mat-button class="tag_2">Tag 2</button>
+    </mat-card-actions>
+  </div>
+</div>
+
+<div class="example-container">
+<h2 class="card-heading">InProgress</h2>
+
+<div
+  cdkDropList
+  [cdkDropListData]="inProgress"
+  class="example-list"
+  (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let item of inProgress" cdkDrag>{{item}}</div>
+  <mat-card-actions class="btn-container">
+    <button mat-button class="tag_1">Tag 1</button>
+    <button mat-button class="tag_2">Tag 2</button>
+  </mat-card-actions>
+</div>
+</div>
+<div class="example-container">
+<h2 class="card-heading">Manager Discussion</h2>
+
+<div
+  cdkDropList
+  [cdkDropListData]="managerDiscussion"
+  class="example-list"
+  (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let item of managerDiscussion" cdkDrag>{{item}}</div>
+  <mat-card-actions class="btn-container">
+    <button mat-button class="tag_1">Tag 1</button>
+    <button mat-button class="tag_2">Tag 2</button>
+  </mat-card-actions>
+</div>
+</div>
+
+<div class="example-container">
+<h2 class="card-heading">Selected</h2>
+
+<div
+  cdkDropList
+  [cdkDropListData]="selected"
+  class="example-list"
+  (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let item of selected" cdkDrag>{{item}}</div>
+  <mat-card-actions class="btn-container">
+    <button mat-button class="tag_1">Tag 1</button>
+    <button mat-button class="tag_2">Tag 2</button>
+  </mat-card-actions>
+</div>
+</div>
+<div class="example-container">
+<h2 class="card-heading">Rejected</h2>
+
+<div
+  cdkDropList
+  [cdkDropListData]="rejected"
+  class="example-list"
+  (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let item of rejected" cdkDrag>{{item}}</div>
+  <mat-card-actions class="btn-container">
+    <button mat-button class="tag_1">Tag 1</button>
+    <button mat-button class="tag_2">Tag 2</button>
+  </mat-card-actions>
+</div>
+</div>
+</div>
+
+
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
