@@ -10,10 +10,11 @@ export class User {
     skills:string;
     technology:string;
     maritalStatus:string;
+    dueDate:string;
 
 
     constructor(dasId:number,candidateName:string,password:string,totalExperience:string,age:string,relevantExperience:string,
-        expectedLWD:string,location:string,skills:string,technology:string,maritalStatus:string)
+        expectedLWD:string,location:string,skills:string,technology:string,maritalStatus:string,dueDate:string)
     {
         this.dasId=dasId;
         this.candidateName=candidateName;
@@ -26,6 +27,7 @@ export class User {
         this.skills=skills;
         this.technology=technology;
         this.maritalStatus=maritalStatus;
+        this.dueDate=dueDate;
     }
 
 }

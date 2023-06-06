@@ -2,22 +2,27 @@
   <div>
    <img src="./assets/loginpagebg.jpg">
   </div> -->
-<div class="rectanglewithinbackground">
-   <div class="form-container">
-      <div>
-         <h1 class="text-center heading">LOGIN</h1>
-         <div class="">      
-            <label class="username my-2 ">Username : </label>  
-            <input type="text"  placeholder="Enter Username"class="rectangleno1" >
-         </div>
-         <div class="mb-2">
-            <label class="password my-2">Password : </label>  
-            <input type="password" placeholder="Enter Password"  class="rectangleno2" > 
-         </div>
-         <div class="d-flex btn-container">
-            <button class="login" (click)="onRegisterClick()">Login</button> <br>
-            <button type="button" class="cancel"> Cancel</button>
+
+<form [formGroup]="loginObject">
+   <div class="rectanglewithinbackground">
+      <h1 class="text-center heading fsize">Welcome To WGS Hiring Portal</h1>
+      <div class="form-container">
+         <div>
+            <h1 class="text-center heading">LOGIN</h1>
+            <div class="">
+               <label class="username my-2 ">Managername : </label>
+               <input type="text" placeholder="Enter Managername" class="rectangleno1" name="managerName"
+                  id="managerName" formControlName="managerName">
+            </div>
+            <div class="mb-2">
+               <label class="password my-2">Password : </label>
+               <input type="password" placeholder="Enter Password" class="rectangleno2" name="password" id="password"
+                  formControlName="password">
+            </div>
+            <div class="d-flex btn-container align-items-center">
+               <button class="login" (click)="onRegisterClick()">Login</button>
+            </div>
          </div>
       </div>
    </div>
-</div>
+</form>

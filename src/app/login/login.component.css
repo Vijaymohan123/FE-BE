@@ -1,60 +1,80 @@
-
-.rectanglewithinbackground{
-  height:100vh;
-  width:100vw;
+.rectanglewithinbackground {
+  height: 100vh;
+  width: 100vw;
   background: url("../../assets/loginpagebg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   opacity: 0.9;
 }
-.username,.password,.heading{
-  color:#fff;
+
+.username,
+.password,
+.heading {
+  color: #fff;
   display: block;
 }
-.username,.password{
+
+.fsize {
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+.username,
+.password {
   font-size: 20px;
 }
-.form-container{
+
+.form-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:100%;
-  height:100%;
+  width: 100%;
+  /* height:100%;
+   */
+  padding: 150px 0px 0px 0px;
 }
-.form-container > div{
-  border:5px solid #fff;
- max-width:400px;
- width:100%;
- min-width: 320px;
- border-radius: 10px;
- padding:15px;
- /* box-shadow: 5px 10px 20px rgb(64, 62, 62); */
+
+.form-container>div {
+  border: 5px solid #fff;
+  max-width: 400px;
+  width: 100%;
+  min-width: 320px;
+  border-radius: 10px;
+  padding: 15px;
+  /* box-shadow: 5px 10px 20px rgb(64, 62, 62); */
 }
-input[type="text"],input[type="password"]{
-  padding:5px 10px;
-  width:100%;
-  border:none;
-  outline:none;
+
+input[type="text"],
+input[type="password"] {
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
   font-size: 18px;
 }
-.login{
+
+.login {
   margin-right: 10px;
-  color:#fff;
+  color: #fff;
   background-color: lightgreen;
 }
-.btn-container{
+
+.btn-container {
   margin-top: 20px;
-  
+
 }
-.cancel{
-  color:#fff;
+
+.cancel {
+  color: #fff;
   background-color: tomato;
 }
-.cancel,.login{
+
+.cancel,
+.login {
   display: inline-block;
   border: none;
-  outline:none;
+  outline: none;
   border-radius: 5px;
-  padding:10px;
+  padding: 10px;
   cursor: pointer;
 }

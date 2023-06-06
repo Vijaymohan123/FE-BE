@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {Router }from '@angular/router'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router'
+import { SharedserviceService } from '../sharedservice.service';
 
 @Component({
   selector: 'app-login',
@@ -8,19 +10,33 @@ import {Router }from '@angular/router'
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
- 
-   dasId:number=0;
-   emailId:string='';
-   password:string='';
+
+  loginObject: FormGroup;
+  //  loginText:string='';
+
+  constructor(private router: Router,
+    private service: SharedserviceService, private loginFormBuilder: FormBuilder) {
+    this.loginObject = this.loginFormBuilder.group({
+      id: [''],
+      managerName: ['', [Validators.required]],
+      password: ['', [Validators.required]]
+
+    })
+
+  }
+
 
   ngOnInit(): void {
   }
 
-  onRegisterClick():void
-  {
-      this.router.navigate(['/todo']);
-      console.log("registerClicked");
+  onRegisterClick() {
+    if (this.loginObject.invalid) {
+      return;
+    }
+    let a = { ...this.loginObject.value }
+    this.router.navigate(['/todo']);
+    this.service.loginData(a).subscribe((a) => { console.log(a) });
+
   }
 
 }
